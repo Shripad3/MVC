@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Shripad.Dabbir\\source\\repos\\CustomAuth\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EDA4D117-836D-421A-9A89-C9ADD4A23038}|CustomAuth\\CustomAuth.csproj|c:\\users\\shripad.dabbir\\source\\repos\\customauth\\customauth\\views\\account\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDA4D117-836D-421A-9A89-C9ADD4A23038}|CustomAuth\\CustomAuth.csproj|solutionrelative:customauth\\views\\account\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDA4D117-836D-421A-9A89-C9ADD4A23038}|CustomAuth\\CustomAuth.csproj|c:\\users\\shripad.dabbir\\source\\repos\\customauth\\customauth\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDA4D117-836D-421A-9A89-C9ADD4A23038}|CustomAuth\\CustomAuth.csproj|solutionrelative:customauth\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shripad.Dabbir\\source\\repos\\CustomAuth\\CustomAuth\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "CustomAuth\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Shripad.Dabbir\\source\\repos\\CustomAuth\\CustomAuth\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "CustomAuth\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T06:24:08.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Registration.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shripad.Dabbir\\source\\repos\\CustomAuth\\CustomAuth\\Views\\Account\\Registration.cshtml",
+              "RelativeDocumentMoniker": "CustomAuth\\Views\\Account\\Registration.cshtml",
+              "ToolTip": "C:\\Users\\Shripad.Dabbir\\source\\repos\\CustomAuth\\CustomAuth\\Views\\Account\\Registration.cshtml*",
+              "RelativeToolTip": "CustomAuth\\Views\\Account\\Registration.cshtml*",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFQAAACsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T05:35:40.913Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

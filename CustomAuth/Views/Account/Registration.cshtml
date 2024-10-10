@@ -1,0 +1,94 @@
+﻿@model CustomAuth.Models.RegistrationViewModel
+
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<h1>Registration</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Registration">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if(ViewBag.Message != null)
+            {
+                <div class="form-froup" style="color: green;">@ViewBag.Message</div>
+            }
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" id="fname" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfBirth" class="control-label">Date</label>
+                <input type="date" asp-for="DateOfBirth" class="form-control" />
+                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label" id="email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="control-label"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div>
+                <strong>Designation:</strong>
+                <div class="form-group">
+                    <input type="radio" asp-for="Designation" value="Fullstack" />
+                    <label class="control-label">Fullstack</label><br />
+                    <input type="radio" asp-for="Designation" value="QA" />
+                    <label class="control-label">QA</label>
+                    <span asp-validation-for="Designation" class="text-danger"></span>
+                </div>
+            </div>
+            <strong>Skills: </strong>
+            <div class="form-group">
+                <input type="checkbox" asp-for="C" />
+                <label class="control-label">C</label><br />
+                <input type="checkbox" asp-for="Python" />
+                <label class="control-label">Python</label><br />
+                <input type="checkbox" asp-for="Java" />
+                <label class="control-label">Java</label>
+            </div>
+            <div class="form-group" id="btnn">
+                <input type="submit" value="Register" class="btn btn-primary" id="butt"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    Already have an account?<a asp-action="Login">Go To Login</a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var email = $("#email").val();
+        var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        return regex.test(email);
+    })
+</script>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
